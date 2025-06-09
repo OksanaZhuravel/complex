@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <>
       <ReviewList />
-      {/* Оформление заказа */}
+
       <OrderSummary />
-      {/* Список товаров */}
+
       <ProductList />
       <Suspense>
         <ProductModal />
