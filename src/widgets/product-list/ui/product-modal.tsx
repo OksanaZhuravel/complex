@@ -3,7 +3,7 @@
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-import { useProductsByIds } from '@/shared/api/use-products-by-ids';
+import { useProductsByIds } from '@/app/api/use-products-by-ids';
 import {
   Dialog,
   DialogContent,

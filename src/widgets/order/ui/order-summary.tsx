@@ -1,7 +1,7 @@
 'use client';
 
-import { useProductsByIds } from '@/shared/api/use-products-by-ids';
-import { useSubmitOrder } from '@/shared/api/use-submit-order';
+import { useProductsByIds } from '@/app/api/use-products-by-ids';
+import { useSubmitOrder } from '@/app/api/use-submit-order';
 import { useCartStore } from '@/shared/store/cart-store';
 import { Button } from '@/shared/ui/button';
 import {

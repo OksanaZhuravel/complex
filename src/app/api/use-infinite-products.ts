@@ -1,6 +1,6 @@
 import { useInfiniteQuery } from '@tanstack/react-query';
 
-import { getProducts } from '@/shared/api/products';
+import { getProducts } from '@/app/api/products';
 import {
   DEFAULT_PRODUCTS_PAGE,
   DEFAULT_PRODUCTS_PAGE_SIZE,

@@ -1,7 +1,7 @@
-import { httpClient } from '@/shared/api/httpClient';
+import { httpClient } from '@/app/api/httpClient';
 import { Product } from '@/shared/model/product';
 import { useQuery } from '@tanstack/react-query';
-import { QueryKeys } from '../constants';
+import { QueryKeys } from '../../shared/constants';
 
 export const useProductsByIds = (ids: number[]) =>
   useQuery({

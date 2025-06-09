@@ -45,7 +45,7 @@
 // };
 'use client';
 
-import { useInfiniteProductsQuery } from '@/shared/api/use-infinite-products';
+import { useInfiniteProductsQuery } from '@/app/api/use-infinite-products';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { ProductCard } from './product-card';
