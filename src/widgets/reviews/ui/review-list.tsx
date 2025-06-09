@@ -20,6 +20,9 @@ export const ReviewList = async () => {
             className="flex w-full max-w-[468px] flex-col items-start rounded-2xl bg-card px-6.75 py-5 text-card-foreground shadow transition hover:shadow-lg"
           >
             <div className="text-2xl">Отзыв {review.id}</div>
+            <div className="text-2xl text-muted-foreground">
+              полученный с API
+            </div>
             <div className="text-2xl text-muted-foreground">HTML</div>
             <div
               className="pt-11 text-2xl md:pt-10"
