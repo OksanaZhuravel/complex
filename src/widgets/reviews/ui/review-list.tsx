@@ -1,13 +1,14 @@
-'use client';
+import { getReviews } from '@/shared/api/get-reviews';
+import DOMPurify from 'isomorphic-dompurify';
 
-import { useReviews } from '@/shared/api/use-reviews';
-import DOMPurify from 'dompurify';
+export const ReviewList = async () => {
+  let reviews = [];
 
-export const ReviewList = () => {
-  const { data: reviews = [], isLoading, isError } = useReviews();
-
-  if (isLoading) return <p>Загрузка отзывов...</p>;
-  if (isError) return <p>Ошибка загрузки отзывов.</p>;
+  try {
+    reviews = await getReviews();
+  } catch {
+    return <p className="text-center text-xl">Не удалось загрузить отзывы.</p>;
+  }
 
   return (
     <section className="flex w-full flex-col items-center justify-center gap-4 p-4">
@@ -19,9 +20,6 @@ export const ReviewList = () => {
             className="flex w-full max-w-[468px] flex-col items-start rounded-2xl bg-card px-6.75 py-5 text-card-foreground shadow transition hover:shadow-lg"
           >
             <div className="text-2xl">Отзыв {review.id}</div>
-            <div className="text-2xl text-muted-foreground">
-              полученный с API
-            </div>
             <div className="text-2xl text-muted-foreground">HTML</div>
             <div
               className="pt-11 text-2xl md:pt-10"
