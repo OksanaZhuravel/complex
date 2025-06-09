@@ -1,4 +1,4 @@
-import { httpClient } from '@/app/api/httpClient';
+import { httpClient } from '@/shared/api/httpClient';
 import { OrderPayload } from '@/shared/model/cart';
 import { useMutation } from '@tanstack/react-query';
 

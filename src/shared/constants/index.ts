@@ -36,4 +36,5 @@ export const enum LocalStorage {
 export const enum QueryKeys {
   PRODUCTS = 'products',
   PRODUCT = 'product',
+  REVIEWS = 'reviews',
 }

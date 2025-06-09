@@ -1,4 +1,4 @@
-import { httpClient } from '@/app/api/httpClient';
+import { httpClient } from '@/shared/api/httpClient';
 import { Product } from '@/shared/model/product';
 import { useQuery } from '@tanstack/react-query';
 import { QueryKeys } from '../../shared/constants';

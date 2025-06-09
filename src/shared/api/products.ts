@@ -1,4 +1,4 @@
-import { httpClient } from '@/app/api/httpClient';
+import { httpClient } from '@/shared/api/httpClient';
 import {
   DEFAULT_PRODUCTS_PAGE,
   DEFAULT_PRODUCTS_PAGE_SIZE,
