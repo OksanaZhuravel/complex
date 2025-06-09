@@ -5,7 +5,6 @@ import DOMPurify from 'dompurify';
 
 export const ReviewList = () => {
   const { data: reviews = [], isLoading, isError } = useReviews();
-  console.log('reviews', reviews);
 
   if (isLoading) return <p>Загрузка отзывов...</p>;
   if (isError) return <p>Ошибка загрузки отзывов.</p>;

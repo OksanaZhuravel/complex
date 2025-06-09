@@ -21,7 +21,6 @@ export const ThemeToggle = () => {
   ];
   const [open, setOpen] = useState(false);
   const handleThemeChange = (value: string) => {
-    console.log(`Changing theme to: ${value}`);
     setTheme(value);
     setOpen(false);
   };
@@ -29,7 +28,11 @@ export const ThemeToggle = () => {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <Button variant="outline" className="h-9 w-9">
+        <Button
+          variant="outline"
+          className="h-9 w-9"
+          aria-label="Изменить тему"
+        >
           {themes.find((t) => t.value === theme)?.icon}
         </Button>
       </PopoverTrigger>
@@ -39,8 +42,8 @@ export const ThemeToggle = () => {
             variant={'outline'}
             className="h-9 w-9"
             key={themeOption.value}
+            aria-label={`Изменить тему на: ${themeOption.value}`}
             onClick={() => {
-              // console.log(`Button clicked for theme: ${themeOption.value}`);
               handleThemeChange(themeOption.value);
             }}
           >
