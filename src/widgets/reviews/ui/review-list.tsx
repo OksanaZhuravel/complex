@@ -13,7 +13,7 @@ export const ReviewList = () => {
   return (
     <section className="flex w-full flex-col items-center justify-center gap-4 p-4">
       <h2 className="sr-only">Отзывы</h2>
-      <ul className="grid w-full max-w-[970px] grid-cols-1 items-stretch justify-items-center gap-4.5 md:grid-cols-2 md:gap-x-0 md:gap-y-10.5 md:p-0">
+      <ul className="grid w-full max-w-[970px] grid-cols-1 items-stretch justify-items-center gap-4.5 md:grid-cols-2 md:gap-2 md:gap-y-10.5 md:p-0">
         {reviews.map((review) => (
           <li
             key={review.id}
