@@ -19,10 +19,8 @@ export const ScrollToTopButton = () => {
 
   return (
     <Button
-      size={'icon'}
-      variant={'modal'}
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      className="fixed right-6 bottom-6 z-50 rounded-full p-2 shadow-lg transition"
+      className="fixed right-6 bottom-6 z-50 size-8 rounded-full bg-foreground p-2 text-background shadow-lg transition duration-500 hover:bg-foreground/40 hover:text-foreground"
     >
       <ChevronUp className="size-7" />
     </Button>
